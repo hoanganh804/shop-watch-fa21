@@ -5,6 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("./header.html");
+      });
+
+      $(function () {
+        $("#footer").load("./footer.html");
+      });
+    </script>
   </head>
-  <body></body>
+  <body>
+    <div id="header"></div>
+    <div class="main-container">this is body</div>
+    <div id="footer"></div>
+  </body>
 </html>
