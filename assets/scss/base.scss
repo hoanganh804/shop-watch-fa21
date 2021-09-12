@@ -1,0 +1,14 @@
+$color_font_black: #23252b;
+$color_font_white: rgb(245, 245, 245);
+$color_main_content: #f8f7f3;
+
+body {
+  background-color: $color_main_content;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "Montserrat", sans-serif;
+}

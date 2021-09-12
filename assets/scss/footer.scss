@@ -1,2 +1,156 @@
-.hello {
+@import "base";
+footer {
+  .list_image {
+    &-title {
+      text-align: center;
+      .main_title {
+        font-size: 32px;
+      }
+      .content_title {
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+    &-scroll {
+      display: flex;
+      overflow: hidden;
+      padding: 6px;
+      background-color: white;
+
+      margin-top: 40px;
+
+      -webkit-overflow-scrolling: touch;
+      scroll-behavior: smooth;
+      img {
+        width: 275px;
+        height: 275px;
+        left: 1130px;
+        bottom: 7px;
+        padding: 0 3px;
+
+        object-fit: cover;
+      }
+    }
+  }
+  .footer_contact {
+    margin: 70px auto 0 auto;
+    display: flex;
+    padding: 0;
+
+    .footer_contact-title {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+    &-register {
+      &-form {
+        display: flex;
+        flex-direction: column;
+
+        // align-items: center;
+
+        .select_input {
+          display: flex;
+          justify-content: space-between;
+          width: 400px;
+
+          select {
+            outline: none;
+            padding-left: 17px;
+            width: calc(35% - 14px);
+            background: #f8f7f3;
+            border: 1px solid #d6d6d4;
+            color: #838280;
+          }
+          .input_name {
+            height: 50px;
+            width: 65%;
+            padding: 17px;
+            outline: none;
+
+            background: #f8f7f3;
+            border: 1px solid #d6d6d4;
+          }
+        }
+        .input_email {
+          outline: none;
+          height: 50px;
+          width: 400px;
+          padding: 17px;
+          margin-top: 14px;
+
+          background: #f8f7f3;
+          border: 1px solid #d6d6d4;
+        }
+        button {
+          height: 50px;
+          width: 400px;
+
+          font-size: 14px;
+          font-weight: bold;
+          color: #f8f7f3;
+          background: #838280;
+          border: none;
+          margin-top: 20px;
+        }
+      }
+    }
+    &-contact {
+      &-email {
+        line-height: 0;
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 20px;
+      }
+      &-phone {
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+    &-address {
+      .main_address {
+        .address {
+          font-size: 14px;
+          font-weight: 300;
+        }
+      }
+      .main_address + .main_address {
+        margin-top: 50px;
+      }
+    }
+  }
+  .footer_nav {
+    margin-top: 70px;
+    background-color: #ecebea;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+
+      ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        li {
+          color: $color_font_black;
+          font-size: 14px;
+          font-weight: 500;
+        }
+        li + li {
+          margin-left: 60px;
+        }
+        a {
+          text-decoration: none;
+          color: $color_font_black;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
 }
