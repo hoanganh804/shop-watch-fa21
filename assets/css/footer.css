@@ -136,6 +136,12 @@ footer .footer_contact-contact-phone {
   font-weight: 300;
 }
 
+footer .footer_contact-address .footer_contact-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
 footer .footer_contact-address .main_address .address {
   font-size: 14px;
   font-weight: 300;
