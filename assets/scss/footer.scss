@@ -107,6 +107,12 @@ footer {
         font-size: 14px;
         font-weight: 300;
       }
+      &-icon {
+        margin-top: 20px;
+        object + object {
+          margin-left: 10px;
+        }
+      }
     }
     &-address {
       .footer_contact-title {

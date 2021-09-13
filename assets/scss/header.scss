@@ -1,0 +1,55 @@
+@import "base";
+header {
+  height: 80px;
+  position: relative;
+  width: 100%;
+
+  nav {
+    // background-color: #f8f7f4;
+
+    position: fixed;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    width: 100%;
+
+    border-bottom: 1px solid rgba(145, 145, 145, 0.502);
+    transition: all 0.2s ease-out;
+    .nav_container {
+      padding: 0 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        li {
+          //   color: $color_font_black;
+          color: $color_font_white;
+
+          font-size: 14px;
+          font-weight: 500;
+        }
+        li + li {
+          margin-left: 60px;
+        }
+        a {
+          text-decoration: none;
+          color: $color_font_white;
+          //   color: $color_font_black;
+
+          font-size: 14px;
+          font-weight: 500;
+        }
+        i {
+          font-size: 20px;
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}

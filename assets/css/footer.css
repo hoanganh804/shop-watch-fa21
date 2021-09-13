@@ -136,6 +136,14 @@ footer .footer_contact-contact-phone {
   font-weight: 300;
 }
 
+footer .footer_contact-contact-icon {
+  margin-top: 20px;
+}
+
+footer .footer_contact-contact-icon object + object {
+  margin-left: 10px;
+}
+
 footer .footer_contact-address .footer_contact-title {
   font-size: 14px;
   font-weight: 500;

@@ -1,0 +1,81 @@
+body {
+  background-color: #f8f7f3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  height: 80px;
+  position: relative;
+  width: 100%;
+}
+
+header nav {
+  position: fixed;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 3;
+  width: 100%;
+  border-bottom: 1px solid rgba(145, 145, 145, 0.502);
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+header nav .nav_container {
+  padding: 0 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+header nav .nav_container ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+header nav .nav_container ul li {
+  color: whitesmoke;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+header nav .nav_container ul li + li {
+  margin-left: 60px;
+}
+
+header nav .nav_container ul a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+header nav .nav_container ul i {
+  font-size: 20px;
+  margin-left: 8px;
+}
+/*# sourceMappingURL=header.css.map */
