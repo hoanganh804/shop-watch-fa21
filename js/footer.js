@@ -18,7 +18,7 @@ slider.addEventListener("mouseup", () => {
   isDown = false;
   slider.classList.remove("active");
 
-  //setinterval
+  setinterval;
   idAutoScroll = setInterval(() => {
     const walk = -1.5; //scroll-fast
     if (slider.scrollLeft > 0 && scrollLeft == slider.scrollLeft) {
