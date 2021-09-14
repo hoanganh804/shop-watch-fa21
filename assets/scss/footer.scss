@@ -11,23 +11,31 @@ footer {
         font-weight: 300;
       }
     }
+
+    &-scroll.active {
+      background: rgba(255, 255, 255, 0.3);
+      cursor: grabbing;
+      cursor: -webkit-grabbing;
+      transform: scale(1);
+    }
+
     &-scroll {
       display: flex;
-      overflow: hidden;
+      overflow-x: hidden;
       padding: 6px;
       background-color: white;
+      cursor: grab;
 
       margin-top: 40px;
 
-      -webkit-overflow-scrolling: touch;
-      scroll-behavior: smooth;
+      transition: all 1s ease-in-out;
       img {
         width: 275px;
         height: 275px;
         left: 1130px;
         bottom: 7px;
         padding: 0 3px;
-
+        transition: all 1s ease-in-out;
         object-fit: cover;
       }
     }

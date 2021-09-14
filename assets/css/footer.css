@@ -25,16 +25,26 @@ footer .list_image-title .content_title {
   font-weight: 300;
 }
 
+footer .list_image-scroll.active {
+  background: rgba(255, 255, 255, 0.3);
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 footer .list_image-scroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
+  overflow-x: hidden;
   padding: 6px;
   background-color: white;
+  cursor: -webkit-grab;
+  cursor: grab;
   margin-top: 40px;
-  -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 footer .list_image-scroll img {
@@ -43,6 +53,8 @@ footer .list_image-scroll img {
   left: 1130px;
   bottom: 7px;
   padding: 0 3px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
   -o-object-fit: cover;
      object-fit: cover;
 }
