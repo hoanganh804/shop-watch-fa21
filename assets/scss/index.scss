@@ -8,3 +8,96 @@
     object-fit: cover;
   }
 }
+
+.main-container {
+  .men {
+    margin-top: 20px;
+    &_title {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 200;
+    }
+    &_more {
+      text-align: center;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      margin-bottom: 30px;
+    }
+    &_products {
+      display: flex;
+      justify-content: space-around;
+
+      &-form {
+        &:hover {
+          box-shadow: 0px 0px 20px 18px rgba(186, 186, 186, 0.2);
+          .add_cart {
+            display: block;
+          }
+        }
+        position: relative;
+        width: 260px;
+        height: 360px;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+        .add_cart {
+          position: absolute;
+          text-align: center;
+          width: 260px;
+          height: 50px;
+          bottom: 80px;
+          background-color: rgb(233, 233, 233);
+          font-weight: bold;
+          line-height: 48px;
+          border: 1px solid white;
+          display: none;
+
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            background-color: rgb(28, 28, 28);
+            color: white;
+          }
+        }
+        .discount {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+
+          height: 30px;
+          width: 60px;
+          background-color: rgba(176, 31, 31, 0.995);
+          border-radius: 20px;
+
+          color: white;
+          font-weight: bold;
+          line-height: 32px;
+          text-align: center;
+        }
+        img {
+          width: 260px;
+          height: 280px;
+        }
+        .name {
+          text-align: center;
+          font-size: 14px;
+          font-weight: 300;
+          margin-top: 10px;
+        }
+        .price {
+          display: flex;
+          justify-content: space-evenly;
+          margin-top: 10px;
+          &_now {
+            font-size: 14px;
+            font-weight: 700;
+          }
+          &_prev {
+            font-size: 12px;
+            font-weight: 300;
+            text-decoration-line: line-through;
+          }
+        }
+      }
+    }
+  }
+}
