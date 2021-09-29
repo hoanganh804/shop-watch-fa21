@@ -8,7 +8,64 @@
     object-fit: cover;
   }
 }
+.introduce {
+  background-color: #ecebea;
 
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    align-items: center;
+    padding: 0 50px;
+
+    li {
+      min-width: 300px;
+      font-size: 12px;
+      &:nth-child(2) {
+        text-align: center;
+      }
+      &:nth-child(3) {
+        text-align: end;
+      }
+    }
+  }
+}
+.highline_category {
+  margin-top: 40px;
+  &-item {
+    position: relative;
+    width: 370px;
+    height: 254px;
+    img {
+      height: 254px;
+      width: 370px;
+    }
+    .title {
+      position: absolute;
+      color: white;
+      bottom: 24px;
+      left: 50px;
+      font-size: 20px;
+      font-weight: 300;
+    }
+    i {
+      position: absolute;
+      color: white;
+      bottom: 26px;
+      right: 30px;
+      font-size: 28px;
+      cursor: pointer;
+      // &:hover {
+      //   background-color: white;
+      //   border-radius: 50%;
+      //   color: black;
+      // }
+    }
+  }
+}
 .main-container {
   .men {
     margin-top: 100px;
