@@ -1,0 +1,9 @@
+.banner_category img {
+  height: 400px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+/*# sourceMappingURL=category.css.map */

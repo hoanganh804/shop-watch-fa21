@@ -22,6 +22,19 @@ const headerFontLis = [
 const headerFontAs = [
   ...document.querySelectorAll("header nav .nav_container ul a"),
 ];
+
+const link = location.href.split("/");
+
+if (link[link.length - 1] === "category.html") {
+  scrollHeader.style.backgroundColor = "#f8f7f4";
+  for (const headerFontLi of headerFontLis) {
+    headerFontLi.style.color = "black";
+  }
+  for (const headerFontA of headerFontAs) {
+    headerFontA.style.color = "black";
+  }
+}
+
 const changeHeaderScroll = () => {
   if (statusScrollHeader == false) {
     scrollHeader.removeAttribute("style");

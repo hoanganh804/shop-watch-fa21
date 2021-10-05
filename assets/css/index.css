@@ -49,13 +49,14 @@
 
 .highline_category-item {
   position: relative;
-  width: 370px;
   height: 254px;
 }
 
 .highline_category-item img {
-  height: 254px;
-  width: 370px;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .highline_category-item .title {

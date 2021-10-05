@@ -37,11 +37,11 @@
   margin-top: 40px;
   &-item {
     position: relative;
-    width: 370px;
     height: 254px;
     img {
-      height: 254px;
-      width: 370px;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
     }
     .title {
       position: absolute;
